@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bilingual-subtitle-tool"
+version = "0.1.0"
+description = "Generate Chinese-English bilingual subtitles from local videos with Alibaba Cloud Bailian ASR."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "oss2>=2.19.1",
+  "PySide6>=6.11.0",
+]
+
+[project.scripts]
+bilingual-subtitles = "subtitle_tool.cli:main"
+bilingual-subtitles-gui = "subtitle_tool.gui:main"
+
+[tool.setuptools]
+packages = ["subtitle_tool"]

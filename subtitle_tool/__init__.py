@@ -1,0 +1,2 @@
+"""Local bilingual subtitle generator."""
+
